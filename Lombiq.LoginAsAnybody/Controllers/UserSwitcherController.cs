@@ -56,6 +56,6 @@ public sealed class UserSwitcherController : Controller
 
         _logger.LogInformation("User {UserName} logged in as {SelectedUserName}.", User.Identity.Name, selectedUser.UserName);
 
-        return Redirect("~/");
+        return Redirect(Url.Content("~/"));
     }
 }
